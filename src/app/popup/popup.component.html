@@ -1,0 +1,24 @@
+<dx-popup
+    [width]="400"
+    [height]="300"
+    [showTitle]="true"
+    title="Добавить модель"
+    [dragEnabled]="false"
+    [showCloseButton]="false"
+    [closeOnOutsideClick]="false"
+    [(visible)]="isPopupVisible">
+<dx-text-box
+    (onValueChanged)="addItem($event.value)"
+    placeholder="Печатай сюда">
+</dx-text-box>
+<dx-check-box
+    text="Реальная?"
+    [value]="false">
+</dx-check-box>
+<app-toolbars
+    [buttons]="buttons">
+</app-toolbars>
+</dx-popup>
+
+
+

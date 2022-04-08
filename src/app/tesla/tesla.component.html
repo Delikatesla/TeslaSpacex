@@ -1,0 +1,4 @@
+<app-toolbars [buttons]="buttons" (clickEvent)="getClickInToolbarComponent($event)"></app-toolbars>
+<!-- <pre> {{currentToolbarEvent?.itemData | json}} </pre> -->
+<app-popup [isPopupVisible]="isPopupShowed" (popupVisionEvent)="togglePopup($event)" (newItemEvent)="addNewCar($event)"></app-popup>
+<dx-list displayExpr="title" [dataSource]="cars"> </dx-list>
